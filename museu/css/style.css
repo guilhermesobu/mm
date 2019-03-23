@@ -1,0 +1,146 @@
+html{
+    background-image: url(../src/images/images.jpg);
+}
+
+/*HEADER-----------------------------------------*/
+.header-block {
+    display: block;
+    border: 5px solid black;
+    border-radius: 30px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-color: #ffffff;
+    background-color: #264968;
+    height: 50px;
+    position: relative;
+    top: 5px;
+}   
+.header-font {
+    color: #264968;
+    font-family: 'Lato', sans-serif;
+    font-size: xx-large;
+    font-variant: small-caps;
+    font-weight: 900;
+    text-align: center;
+    text-shadow: 0px 0px 5px #ffffff;
+    letter-spacing: 4px;
+    position: relative;
+    bottom: 28px;
+}
+
+/*MENU-----------------------------------------*/
+.menu-block {
+    display: block;
+    height: 20px;
+    border: 5px solid black;
+    border-radius: 30px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top: 0px;
+    border-color: #ffffff;
+    background-color: appworkspace;
+    position: relative;
+    top: 5px;
+}   
+.menu-font {
+    color: #264968;
+    font-family: 'Lato', sans-serif;
+    font-variant: small-caps;
+    text-shadow: 0px 0px 5px #ffffff;
+}   
+a.menu-href { 
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    width: calc(49%);
+}
+
+/*MAIN CONTENT-----------------------------------------*/
+.main-div {
+    background-image: url(../src/images/side-background.jpg);
+    display: block;
+    position: relative;
+    width: 99%;
+    height: 560px;
+    border: 1px solid black;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    text-align: justify;
+    overflow: auto;
+}
+.main-p {
+    position: absolute;
+    text-shadow: 0px 0px 5px black;
+    left: 15px;
+    right: 15px;
+    top: -15px;
+    color: white;
+    font-size: xx-large;
+}
+
+/*SIDE CONTETN-----------------------------------------*/
+.side-div {
+    display: inline-blockblock;
+    background-image: url(../src/images/side-background2.jpg);
+    color: white;
+    position: relative;
+    width: 180px;
+    border: 1px solid black;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    overflow: auto;
+}
+.side-p {
+    display: inline-block;
+    text-orientation: sideways-right;
+    text-shadow: 0px 0px 5px black;
+    position: absolute;
+    min-height: 100%;
+    top: -5px;
+    right: 10px;
+    left: 10px;
+}
+
+/*FOOTER-----------------------------------------*/
+div.footer-div {
+    display: block;
+    border: 5px solid black;
+    border-bottom: 0px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-color: white;
+    background-color: #264968;
+    width: calc(99% - 2px);
+    position: fixed;
+    bottom: 0px;
+    right: 2px;
+    left: 2px;
+}
+p.footer-p {
+    position: relative;
+}
+.footer-font {
+    font-family: "Times New Roman";
+}
+
+/*INDEX-----------------------------------------*/
+div.index-div-content {
+    width: 100%;
+    text-align: justify;
+    position: relative; 
+    top: 15px;
+}
+
+div.index-div-footer {
+    width: 99%;
+    text-align: center;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+}
+
+/*TABELA INDEX-----------------------------------------*/
+table {
+    width: 100%;
+}
