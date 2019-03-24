@@ -56,6 +56,14 @@ a.menu-href {
     width: calc(49%);
 }
 
+/*TABELA INDEX-----------------------------------------*/
+table {
+    width: 100%;
+    position: relative;
+    top: 10px;
+    bottom: 1px;
+}
+
 /*MAIN CONTENT-----------------------------------------*/
 .main-div {
     background-image: url(../src/images/side-background.jpg);
@@ -112,10 +120,9 @@ div.footer-div {
     border-color: white;
     background-color: #264968;
     width: calc(99% - 2px);
-    position: fixed;
+    position: absolute;
+    right: 3px;
     bottom: 0px;
-    right: 2px;
-    left: 2px;
 }
 p.footer-p {
     position: relative;
@@ -140,7 +147,3 @@ div.index-div-footer {
     bottom: 0px;
 }
 
-/*TABELA INDEX-----------------------------------------*/
-table {
-    width: 100%;
-}
