@@ -58,74 +58,62 @@ a.menu-href {
 
 /*TABELA INDEX-----------------------------------------*/
 table {
-    width: 100%;
+    width: calc(100% - 5px);
+    height: 580px;
     position: relative;
     top: 10px;
-    bottom: 1px;
 }
 
 /*MAIN CONTENT-----------------------------------------*/
 .main-div {
     background-image: url(../src/images/side-background.jpg);
-    display: block;
+    display: inline-block;
     position: relative;
-    width: 99%;
-    height: 560px;
+    width: 50%;
+    height: 580px;
     border: 1px solid black;
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
     text-align: justify;
-    overflow: auto;
+    float: left;
 }
 .main-p {
     position: absolute;
     text-shadow: 0px 0px 5px black;
     left: 15px;
     right: 15px;
-    top: -15px;
     color: white;
     font-size: xx-large;
 }
 
 /*SIDE CONTETN-----------------------------------------*/
 .side-div {
-    display: inline-blockblock;
+    display: inline-block;
     background-image: url(../src/images/side-background2.jpg);
     color: white;
     position: relative;
-    width: 180px;
     border: 1px solid black;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
-    overflow: auto;
+    float: right;
 }
 .side-p {
-    display: inline-block;
-    text-orientation: sideways-right;
     text-shadow: 0px 0px 5px black;
     position: absolute;
-    min-height: 100%;
-    top: -5px;
-    right: 10px;
-    left: 10px;
 }
 
 /*FOOTER-----------------------------------------*/
 div.footer-div {
-    display: block;
+    position: relative;
     border: 5px solid black;
     border-bottom: 0px;
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
     border-color: white;
     background-color: #264968;
-    width: calc(99% - 2px);
-    position: absolute;
-    right: 3px;
-    bottom: 0px;
 }
 p.footer-p {
-    position: relative;
+
 }
 .footer-font {
     font-family: "Times New Roman";
@@ -140,10 +128,9 @@ div.index-div-content {
 }
 
 div.index-div-footer {
-    width: 99%;
     text-align: center;
     display: block;
-    position: absolute;
+    position: static;
     bottom: 0px;
 }
 
