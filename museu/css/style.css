@@ -95,11 +95,9 @@ table {
     border: 1px solid black;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
-    float: right;
 }
 .side-p {
     text-shadow: 0px 0px 5px black;
-    position: absolute;
 }
 
 /*FOOTER-----------------------------------------*/
