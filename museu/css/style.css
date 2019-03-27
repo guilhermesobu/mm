@@ -28,6 +28,10 @@ html{
     position: relative;
     bottom: 28px;
 }
+.header-position {
+    position: absolute;
+    top: 15px;
+}
 
 /*MENU-----------------------------------------*/
 .menu-block {
