@@ -54,7 +54,7 @@ a.menu-href {
     text-align: center;
     text-decoration: none;
     color: white;
-    width: calc(49%);
+    width: calc(20%);
 }
 
 /*MAIN CONTENT-----------------------------------------*/
@@ -69,6 +69,7 @@ a.menu-href {
     border-top-left-radius: 5px;
     text-align: justify;
     float: left;
+    overflow: auto;
 }
 .main-p {
     position: absolute;
@@ -84,6 +85,8 @@ a.menu-href {
     display: block;
     background-image: url(../src/images/side-background2.jpg);
     color: white;
+    min-height: 50%;
+    max-height: 440px;
     max-width: 200px;
     max-width: 25%;
     position: relative;
@@ -91,12 +94,13 @@ a.menu-href {
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
     float: right;
+    overflow: auto;
 }
 .side-p {
     text-shadow: 0px 0px 5px black;
     position: relative;
     left: 10px;
-    width: 95%;
+    width: 90%;
 }
 
 /*FOOTER-----------------------------------------*/
@@ -108,7 +112,7 @@ div.footer-div {
     border-top-right-radius: 100px;
     border-color: white;
     background-color: #264968;
-    top: 10px;
+    top: 15px;
     height: 100%;
 }
 p.footer-p {
@@ -125,7 +129,7 @@ div.index-div-content {
     text-align: justify;
     position: relative; 
     top: 15px;
-    height: 468px;
+    height: 440px;
     margin-bottom: 12px;
 }
 
