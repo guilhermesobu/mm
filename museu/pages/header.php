@@ -6,7 +6,7 @@
             <input type="submit" value="Vai!">
         </a>
     </form>    
-    <p class="header-font">
+    <a class="header-font">
         Museum
-    </p>
+    </a>
 </div>
