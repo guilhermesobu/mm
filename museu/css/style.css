@@ -60,6 +60,12 @@ a.menu-href {
     color: white;
     width: calc(20%);
 }
+.menu-query {
+    display: inline-block;
+    text-align: center;
+    color: white;
+    width: calc(20%);
+}
 
 /*MAIN CONTENT-----------------------------------------*/
 .main-div {
@@ -112,8 +118,8 @@ div.footer-div {
     display: block;
     position: relative;
     border: 5px solid black;
-    border-top-left-radius: 100px;
-    border-top-right-radius: 100px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     border-color: white;
     background-color: #264968;
     top: 15px;

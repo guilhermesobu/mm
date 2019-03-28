@@ -1,6 +1,6 @@
 <div class="header-block">
     <form action="../index.php" method="post">    
-        <a class="menu-href header-position">
+        <a class="menu-query header-position">
             Pesquise! 
             <input type="text" name="query">
             <input type="submit" value="Vai!">
