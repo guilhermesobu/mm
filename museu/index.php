@@ -29,7 +29,7 @@
             </div>
         </div>
         
-        <div class="index-div-footer footer-div">
+        <div class="footer-div">
             <?php 
                 require './pages/footer.php';
             ?>

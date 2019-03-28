@@ -1,5 +1,5 @@
 <div class="header-block">
-    <form action="index.php" method="post">    
+    <form action="index.php" method="get">    
         <a class="menu-query header-position">
             Pesquise! 
             <input type="text" name="query">
