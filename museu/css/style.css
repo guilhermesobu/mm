@@ -85,6 +85,7 @@ a.menu-href {
 .main-p {
     position: absolute;
     text-shadow: 0px 0px 5px black;
+    top: -20px;
     left: 15px;
     right: 15px;
     color: white;
