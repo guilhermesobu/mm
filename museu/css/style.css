@@ -26,12 +26,22 @@ html{
     text-shadow: 0px 0px 5px #ffffff;
     letter-spacing: 4px;
     position:  relative;
-    bottom: 35%;
+    top: 4px;
     right: -40%;
 }
 .header-position {
     position: relative;
-    top: 15px;
+    width: 180px;
+}
+.header-query {
+    display: inline-block;
+    color: white;
+    width: calc(35%);
+    position: absolute;
+    left: 10px;
+}
+.header-padding {
+    padding: 15px 0px 0px 0px;
 }
 
 /*MENU-----------------------------------------*/
@@ -61,12 +71,7 @@ a.menu-href {
     color: white;
     width: calc(20%);
 }
-.menu-query {
-    display: inline-block;
-    text-align: center;
-    color: white;
-    width: calc(20%);
-}
+
 
 /*MAIN CONTENT-----------------------------------------*/
 .main-div {
@@ -130,6 +135,7 @@ div.footer-div {
 }
 p.footer-p {
     position: relative;
+    bottom: 15px;
     height: 3px;
 }
 .footer-font {
