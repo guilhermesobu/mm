@@ -6,6 +6,7 @@
         } elseif ($_GET['name'] || $_GET['description']) {
             require '../src/query/connection.php';
             require '../src/query/query.php';
+            $connection;
             $name = $_GET['name'];
             $description = $_GET['description'];
             if(isset($name) && isset($description)){
