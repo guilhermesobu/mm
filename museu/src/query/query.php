@@ -1,3 +1,7 @@
 <?php
+require './connection.php';
 
-$insert = "mysqli_query(INSERT INTO curiosity VALUES ('{name}', '{description}'))";
+$insert = "INSERT INTO curiosity VALUES ('{$name}', '{$description}')";
+
+$select_all = "SELECT * FROM curiosity";
+
