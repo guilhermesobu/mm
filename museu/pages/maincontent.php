@@ -1,6 +1,9 @@
 <p class = "main-p" >
     <?php
-        if ($_GET['query']) {
+    require 'src/query/query.php';
+    
+    
+        if (isset($_GET['query'])) {
             $query = $_GET['query'];
             echo $query;
         } elseif ($_GET['name'] || $_GET['description']) {

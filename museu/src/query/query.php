@@ -1,7 +1,10 @@
 <?php
-require './connection.php';
+require 'src/query/connection.php';
 
-$insert = "INSERT INTO curiosity VALUES ('{$name}', '{$description}')";
+function insert($name,$description){
+ $insert = "INSERT INTO curiosity VALUES ('{$name}', '{$description}')";    
+}
+
 
 $select_all = "SELECT * FROM curiosity";
 
