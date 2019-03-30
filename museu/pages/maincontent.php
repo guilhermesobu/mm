@@ -1,30 +1,27 @@
 <p class = "main-p" >
-    <?php
+</p>
+<form action = "index.php" method = "post" id="#submit">
+    Nome:<input type = "text" name = "name"><br>
+    Descrição:<input type="text" name="description"><br> 
+ <?php
     require 'src/query/query.php';
-    
-    
-        if (isset($_GET['query'])) {
-            $query = $_GET['query'];
+    require 'src/query/connection.php';
+        $query = $_POST['query'];
+        $name = $_POST['name'];
+        $description = $_POST['description'];
+        if (isset($_POST['query'])) {
             echo $query;
-        } elseif ($_GET['name'] || $_GET['description']) {
-            require '../src/query/connection.php';
-            require '../src/query/query.php';
-            $connection;
-            $name = $_GET['name'];
-            $description = $_GET['description'];
+        } elseif (isset($_POST['name']) || isset($_POST['description'])) {
             if(isset($name) && isset($description)){
-                $insert;
+                connection();
+                mysqli_query(connection(), insert($name, $description));
+                mysqli_close(connection());
             } else {
                 echo "Curiosidade não registrada...";
             }
         } else {
     ?>
-</p>
-<form action = "../index.php" method = "get">
-    Nome:<input type = "text" name = "name"><br>
-    Descrição:<input type="text" name="description"><br> 
     <input type="submit" value="Registrar">
 </form>
 <?php 
     } 
-?> 

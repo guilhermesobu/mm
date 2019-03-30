@@ -1,2 +1,4 @@
 <?php
-$connection = mysqli_connect('localhost', 'root', '', 'museu');
+function connection() {
+    mysqli_connect('localhost', 'root', '', 'museu');
+}

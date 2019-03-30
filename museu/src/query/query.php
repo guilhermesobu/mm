@@ -1,8 +1,6 @@
 <?php
-require 'src/query/connection.php';
-
-function insert($name,$description){
- $insert = "INSERT INTO curiosity VALUES ('{$name}', '{$description}')";    
+function insert($name, $description){
+    $insert = "INSERT INTO curiosity (name, description) VALUES ('{$name}', '{$description}')";    
 }
 
 
