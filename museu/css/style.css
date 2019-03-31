@@ -36,6 +36,7 @@ html{
 .header-query {
     display: inline-block;
     color: white;
+    min-width: 450px;
     width: calc(35%);
     position: absolute;
     left: 10px;

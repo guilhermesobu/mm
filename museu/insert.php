@@ -18,7 +18,7 @@
 
         <div class="index-div-content">
             <div class="main-div">
-                <form action="index.php" method="get" class="main-p">
+                <form action="insert.php" method="get" class="main-p">
                     Nome:<input type="text" name="name"><br>
                     Descrição:<input type="text" name="description"><br> 
                     <button type="submit">Registrar</button><br>
