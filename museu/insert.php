@@ -36,8 +36,14 @@
                             mysqli_close($connection);
                             echo "Curiosidade Registrada com sucesso!!";
                         } else {
-                            echo "Curiosidade não registrada...";
+                            if ($name) {
+                                echo "Faltou escrever a descrição!";
+                            } else {
+                                echo "Faltou escrever o nome!";
+                            }
                         }
+                    } else {
+                     echo "Nada foi feito";   
                     }
                     ?>
                 </form>
