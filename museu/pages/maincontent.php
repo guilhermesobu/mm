@@ -7,11 +7,10 @@
             echo $query;
         } else {
             $results = mysqli_query($connection, $select_all);
-            var_dump($results);
-            echo "<br><br>";
             foreach($results as $info){
                 //print_r($info);
-                echo $info['name']."<br>";
+                echo "Nome: " . $info['name'] . "<br>";
+                echo "Descrição: " . $info['description'] . "<br><br>";
             }
         }
     ?>
