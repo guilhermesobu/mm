@@ -24,15 +24,15 @@
                     <button type="submit">Registrar</button><br>
                     <?php
                     require 'src/query/connection.php';
+                    require 'src/query/query.php';
                     isset($_GET['query']) != "" ? $query = $_GET['query'] : $query = NULL;
                     isset($_GET['name']) != "" ? $name = $_GET['name'] : $name = NULL;
                     isset($_GET['description']) != "" ? $description = $_GET['description'] : $description = NULL;
                     if (isset($query)) {
                         echo $query;
                     } elseif (($name) != NULL || ($description) != NULL) {
-                        if (($name) != NULL && ($description) != NULL) {
-                            $insert = "INSERT INTO curiosity (name, description) VALUES ('{$name}', '{$description}')";
-                            mysqli_query($connection, $insert);
+                        if (($name) != NULL && ($description) != NULL) {                            
+                            mysqli_query($connection, insert($name, $description));
                             mysqli_close($connection);
                             echo "Curiosidade Registrada com sucesso!!";
                         } else {
