@@ -11,27 +11,27 @@
         
         <div>
             <?php
-                require 'pages/header.php';
-                require 'pages/menu.php'; 
+                require 'pages/default/header.php';
+                require 'pages/default/menu.php'; 
             ?>
         </div>
         
         <div class="index-div-content">
             <div class="main-div">
                 <?php 
-                    require './pages/maincontent.php'; 
+                    require './pages/default/maincontent.php'; 
                 ?>
             </div>
             <div class="side-div">
                 <?php 
-                    require './pages/sidecontent.php';
+                    require './pages/default/sidecontent.php';
                 ?>
             </div>
         </div>
         
         <div class="footer-div">
             <?php 
-                require './pages/footer.php';
+                require './pages/default/footer.php';
             ?>
         </div>
         
