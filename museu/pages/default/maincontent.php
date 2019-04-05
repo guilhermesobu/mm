@@ -12,7 +12,7 @@
             }
         } else {
             $results = mysqli_query($connection, $select_all);
-            foreach($results as $info){
+            foreach ($results as $info){
                 echo "Nome: " . $info['name'] . "<br>";
                 echo "Descrição: " . $info['description'] . "<br>";
                 echo "Departamento: " . $info['department'] . "<br><br>";
