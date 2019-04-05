@@ -1,15 +1,15 @@
 <?php
 
-function insert($name, $description){ // Para inserir novas curiosidades
-    return $insert = "INSERT INTO curiosity (name, description) VALUES ('{$name}', '{$description}')";    
+function insert($name, $description, $department){ // Para inserir novas curiosidades
+    return $insert = "INSERT INTO curiosity (name, description, id_department) VALUES ('{$name}', '{$description}', {$department})";    
 }
 
 
 
 //PESQUISAS
-$select_all = "SELECT name, description FROM curiosity";
+$select_all = "SELECT c.name, c.description, d.department FROM curiosity c JOIN department d ON c.id_department = d.id";
 
 function search($query){
-    return $search = "SELECT name, description FROM curiosity WHERE name LIKE ('%{$query}%')";
+    return $search = "SELECT c.name, c.description, d.department FROM curiosity c JOIN department d ON c.id_department = d.id WHERE name LIKE ('%{$query}%')";
 }
 
