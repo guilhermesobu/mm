@@ -4,7 +4,7 @@
     <head>
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <meta charset="utf-8">
+        <meta charset="utf-8"/>
         <title>MUSEUFODAO!!</title>
     </head>
 

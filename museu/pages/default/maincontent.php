@@ -5,6 +5,7 @@
             <th>Nome</th>
             <th>Descrição</th>
             <th>Departamento</th>
+            <th style="width: 25px;">Modif.</th>
           </tr>
         </thead>
         <tbody>
@@ -17,23 +18,32 @@
                     foreach ($results as $info){  
             ?>            
             <tr>
-                <td>    <?php echo "Nome: " . $info['name'] . "<br>"; ?> </td>
-                        <?php echo "Descrição: " . $info['description'] . "<br>"; ?>
-                        <?php echo "Departamento: " . $info['department'] . "<br><br>"; ?>
-                        
-                        
+                <td><?php echo $info['name']; ?></td>
+                <td><?php echo $info['description']; ?></td>
+                <td><?php echo (string)$info['department']; ?></td>
+                <td class="yadaaa">
+                    <form action="" method="get">
+                        <input type="submit" value="V">
+                    </form>
+                </td>
+            </tr>            
             <?php   }
                 } else {
                     $results = mysqli_query($connection, $select_all);
-                    foreach ($results as $info){ ?>
-            
-            
-                        <?php echo "Nome: " . $info['name'] . "<br>"; ?>
-                        <?php echo "Descrição: " . $info['description'] . "<br>"; ?>
-                        <?php echo "Departamento: " . $info['department'] . "<br><br>"; ?>
-            
-            
-            <?php        }
+                    foreach ($results as $info){ 
+            ?>
+            <tr>
+                <td><?php echo $info['name']; ?></td>
+                <td><?php echo $info['description']; ?></td>
+                <td><?php echo (string)$info['department']; ?></td>
+                <td>
+                    <form action="" method="get">
+                        <input type="submit" value="V">
+                    </form>
+                </td>
+            </tr> 
+            <?php        
+                    }
                 }
             ?>
         </tbody>

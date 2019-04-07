@@ -2,6 +2,28 @@ html{
     background-image: url(../src/images/images.jpg);
     min-width: 675px;
 }
+table{
+    position: relative;
+    top: 10px;
+    width: 100%;
+    font-family: sans-serif;
+    border-collapse: collapse;
+ 
+}
+thead, tbody, th, td, tr{
+    border: 1px solid white;
+    padding: 5px;
+}
+th{
+    text-align: center;
+    background-color: activeborder;
+}
+td{
+    background-color: lightgray;
+}
+.yadaaa {
+    text-align: center;
+}
 
 /*HEADER-----------------------------------------*/
 .header-block {
@@ -94,7 +116,6 @@ a.menu-href {
     left: 15px;
     right: 15px;
     color: white;
-    font-size: xx-large;
 }
 
 /*SIDE CONTETN-----------------------------------------*/
