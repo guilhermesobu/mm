@@ -5,6 +5,7 @@
             <th>Nome</th>
             <th>Descrição</th>
             <th>Departamento</th>
+            <th style="width: 25px;">Modif.</th>
           </tr>
         </thead>
         <tbody>
@@ -20,6 +21,11 @@
                 <td><?php echo $info['name']; ?></td>
                 <td><?php echo $info['description']; ?></td>
                 <td><?php echo (string)$info['department']; ?></td>
+                <td class="yadaaa">
+                    <form action="" method="get">
+                        <input type="submit" value="V">
+                    </form>
+                </td>
             </tr>            
             <?php   }
                 } else {
@@ -30,6 +36,11 @@
                 <td><?php echo $info['name']; ?></td>
                 <td><?php echo $info['description']; ?></td>
                 <td><?php echo (string)$info['department']; ?></td>
+                <td>
+                    <form action="" method="get">
+                        <input type="submit" value="V">
+                    </form>
+                </td>
             </tr> 
             <?php        
                     }

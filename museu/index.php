@@ -20,7 +20,7 @@
         <div class="index-div-content">
             <div class="main-div">
                 <?php 
-                    require './pages/default/maincontent.php'; 
+                    isset($_GET['home']) ? require './pages/default/maincontent.php' : ''; 
                 ?>
             </div>
             <div class="side-div">

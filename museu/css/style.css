@@ -98,7 +98,8 @@ a.menu-href {
 
 /*MAIN CONTENT-----------------------------------------*/
 .main-div {
-    background-image: url(../src/images/side-background.jpg);
+    /*background-image: url(../src/images/side-background.jpg);*/
+    background-color: burlywood;
     display: inline-block;
     position: relative;
     width: 74%;
