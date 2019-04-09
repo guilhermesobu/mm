@@ -22,12 +22,12 @@
                 <form action="insert.php" method="get" class="main-p"> 
                     Nome:<input type="text" name="name"><br>
                     Descrição:<input type="text" name="description"><br>
-                        Departamento:<select name="department">
-                            <option value="0"></option>
-                            <option value="1">História</option>
-                            <option value="2">Ciência</option>
-                            <option value="3">Alimentação</option>
-                        </select><br>
+                    Departamento:<select name="department">
+                        <option value="0"></option>
+                        <option value="1">História</option>
+                        <option value="2">Ciência</option>
+                        <option value="3">Alimentação</option>
+                    </select><br>
                     <button type="submit">Registrar</button><br>
                     <?php
                     require 'src/query/connection.php';
@@ -37,7 +37,7 @@
                     isset($_GET['description']) != "" ? $description = $_GET['description'] : $description = NULL;
                     isset($_GET['department']) != 0 ? $department = $_GET['department'] : $department = 0;
                     if (($name) != NULL || ($description) != NULL || ($department == 0)) {
-                        if ($name != NULL && $description != NULL && $department != 0) {                            
+                        if ($name != NULL && $description != NULL && $department != 0) {
                             mysqli_query($connection, insert($name, $description, $department));
                             mysqli_close($connection);
                             echo "Curiosidade Registrada com sucesso!!";
@@ -51,7 +51,7 @@
                             }
                         }
                     } else {
-                        echo "Nada foi feito";   
+                        echo "Nada foi feito";
                     }
                     ?>
                 </form>
