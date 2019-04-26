@@ -20,7 +20,15 @@
         <div class="index-div-content">
             <div class="main-div">
                 <?php 
-                    require './pages/default/maincontent.php'; 
+                    if(isset($_GET['home']) || isset($_GET['query'])){
+                        require './pages/default/maincontent.php';
+                    } elseif(isset($_GET['edit'])){
+                        require './pages/default/maincontentedit.php';
+                    } elseif(isset($_GET['insert'])){
+                        require './pages/default/insert.php';
+                    } elseif(isset($_GET['id'])){
+                        require './pages/default/edit.php';
+                    }
                 ?>
             </div>
             <div class="side-div">

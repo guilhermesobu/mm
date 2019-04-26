@@ -1,5 +1,5 @@
 <div class="header-block">
-    <form action="index.php" method="post" 
+    <form action="../museu/index.php" method="get" 
           class="header-query header-position header-padding">    
         <a>
             Pesquise! 
